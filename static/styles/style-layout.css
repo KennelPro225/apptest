@@ -1,0 +1,120 @@
+*{
+    background-color: rgb(201, 221, 252);
+    color: rgb(201, 221, 252);
+}
+
+.logo{
+    width: 20%;
+    height: 4%;
+    cursor: pointer;
+}
+
+.Navbar{
+	display: flex;
+	flex-direction: row;
+    flex-wrap: nowrap;
+	margin: 0;
+	padding: 0;
+	border: none solid;
+	
+}
+
+.button{
+    border: none;
+    border-radius: 50px;
+    background-color: #336699;
+	display: flex;
+    padding: 10px 50px;
+    margin-top: 10px;
+    transition: all 0.3s ease 0s;
+    color: rgb(201, 221, 252);
+    justify-content: flex-end;
+    font-family: 'Verdana',sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.button:hover{
+    color:#0088a9
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: now rap;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.form-group1{
+    color: #336699;
+    display:flex;
+    justify-content:space-evenly;
+    margin-left: 10px;
+}
+
+
+.form-group2{
+    color: #336699;
+    display:flex;
+    justify-content:space-evenly;
+    margin-left: 10px;
+
+
+}
+
+.form-group3{
+    
+    display: flex;
+    justify-content:center;
+    padding: 15px;
+}
+
+.label1{
+    color: #336699;
+    display: flex;
+    justify-items: center;
+    font-family: 'verdana', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left:0;
+    margin-right:1.5cm;
+}
+.label{
+    color: #336699;
+    display: flex;
+    justify-items: center;
+    font-family: 'verdana', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left:1.4cm;
+}
+
+.input{
+    color: #336699;
+    border-style:groove;
+    border-radius: 15px;
+}
+
+.content-section{
+    align-items: center;
+    margin-top: 50px;
+}
+p, a{
+    color: #336699;
+    text-decoration: none ;
+    text-align: center;
+}
+
+.label3{
+    font-family: 'verdana', Tahoma, Geneva, Verdana, sans-serif;
+    color: #336699;
+    margin-left: 2.5cm;
+    margin-right:1.4cm
+}
+
+.label2{
+    margin-left:2.5cm;
+    color: #336699;
+    display: flex;
+    justify-items: center;
+    font-family: 'verdana', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right:1.9cm;
+}

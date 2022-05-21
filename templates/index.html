@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/style-index.css')}}">
+    <link rel="shortcut icon" href="{{url_for('static', filename='images/icon1.ico')}}" type="image/x-icon">
+
+    <title>Accueil-School</title>
+</head>
+<body>
+    <!-- La Barre de Navigation-->
+    <header>
+        <img src="{{url_for('static', filename='images/Logo.png')}}" alt="logo" class="logo">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="login">Se connecter</a></li>
+                <li><a href="signup">S'inscrire</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="#contact"><button>Contacts</button></a>
+    </header>
+    <!-- Corps du site d'accueil par bloc -->
+    <!-- J'ai utilisée un texte en latin parce que je ne savais pas trop quoi écrire -->
+    <div class="body">
+        <div id="presentation">
+            <h3 class="title">C'est quoi School?</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sit autem, minus reprehenderit neque soluta harum ad necessitatibus repellat, officia, tenetur molestias impedit tempore eum? Laboriosam aut soluta quidem assumenda?    
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed odit suscipit nobis eius vitae sapiente officia reprehenderit nemo! Laboriosam id expedita maiores totam nihil quidem dolorem suscipit eum ullam minima!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore eligendi maxime sunt, perferendis qui ratione reiciendis ipsam dolorum hic placeat sed. Corporis doloribus alias ea recusandae iusto quibusdam provident sunt?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias corporis quos soluta repellat id! Vitae quas non vel deserunt, adipisci accusantium nostrum officiis tempore omnis laborum molestiae neque odio consequatur.
+            </p>
+        </div>
+    </div>
+    <!-- Class 'body' pour rendre uniforme les différents bloc du corp de la ppage d'accueil  -->
+    <div class="body">
+        <div id="mission">
+            <h3 class="'title">Notre mission</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sit autem, minus reprehenderit neque soluta harum ad necessitatibus repellat, officia, tenetur molestias impedit tempore eum? Laboriosam aut soluta quidem assumenda?    
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed odit suscipit nobis eius vitae sapiente officia reprehenderit nemo! Laboriosam id expedita maiores totam nihil quidem dolorem suscipit eum ullam minima!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore eligendi maxime sunt, perferendis qui ratione
+            reiciendis ipsam dolorum hic placeat sed. Corporis doloribus alias ea recusandae iusto quibusdam provident sunt?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias corporis quos soluta repellat id! Vitae quas non vel deserunt, adipisci accusantium nostrum officiis tempore omnis laborum molestiae neque odio consequatur.
+            </p>
+        </div>
+    </div>
+    <!-- Class 'body' pour rendre uniforme les différents bloc du corp de la ppage d'accueil  -->
+    <div class="body">
+        <div id="connexion">
+            <h3>Connectez vous</h3>
+            <a href="/login" id="connex"><button> Connexion</button></a>
+        </div>
+    </div>
+    <!-- Class 'body' pour rendre uniforme les différents bloc du corp de la ppage d'accueil  -->
+    <div class="body">
+        <div id="inscriprion">
+            <h3>Vous n'avez pas de compte</h3>
+            <a href="/signup" id="inscrip"><button>Inscription</button> </a>
+            
+        </div>
+    </div>
+    <!-- Class 'body' pour rendre uniforme les différents bloc du corp de la ppage d'accueil  -->
+    <div class="body">
+        <div id="contact">
+            <h3>Contactez-nous</h3>
+            <h5>Par mail:</h5>
+            <p>contact@soutra.com</p>
+            <h5>Par téléphone:</h5>
+            <p>+225 0102030405</p>
+            <p>+225 0102030405</p>
+        </div>
+    </div>
+    <footer id="pied">
+        <h4>School - 2022 <br> Coyright - All right reserved</h4>
+    </footer>
+</body>
+</html>

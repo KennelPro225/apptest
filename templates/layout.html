@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang='fr'>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/style-layout.css')}}">
+	<!-- lE LOGO DE L'ONGLET -->
+    <link rel="shortcut icon" href="{{url_for('static', filename='images/icon1.ico')}}" type="image/x-icon">
+	<!-- le titre sur l'onglet -->
+	{% if title%}
+    	<title>School - {{title}}</title>
+	{% else %}
+		<title>School</title>
+	{% endif %}
+
+
+</head>
+<body>
+	<!-- le header qui presente ici la nav-bar avec  le logo du site -->
+	<header>
+		<nav class="Navbar">
+			<img src="{{url_for('static', filename='images/Logo.png')}}" alt="logo" class="logo">
+		</nav>
+	</header>
+	<!-- Le formatage des sites qui permettent de créer d'autres pages à travers cette seule page qui est comme la base de toutes les autres pages -->
+	{% with messages = get_flashed_messages(with_categories=true) %}
+		{% if messages %}
+			{% for category, message in messages %}
+		   <div class="alert alert-{{ category }}">
+			   {{ message }}
+		   </div>
+		   {% endfor %}
+		{% endif %}
+	{% endwith %}
+	{% block content%}
+	{% endblock %}
+</body>
+</html>

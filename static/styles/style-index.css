@@ -1,0 +1,132 @@
+img{
+    width: 12%;
+    height: 4%;
+}
+/* le selecteurs qui englobe toutes les balises, class et id */
+*{
+    box-sizing:border-box ;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(201, 221, 252);
+}
+
+/* choix de la police, de la taille et de la couleur des polices pour les textes du bouton et ceux de la liste */
+li,a,button{
+    font-family: 'Verdana',sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #336699;
+    text-decoration: none;
+}
+
+/* la nav-bar est disposé en flex */
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+}
+/* le logo de la page */
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+/* destruction du bloc de liste */
+.nav-links{
+    list-style: none;
+}
+/* alignement de la liste */
+.nav-links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+/* petite animation sur les texte à lien */
+.nav-links li a{
+    transition: all 0.3s ease 0s;
+}
+/* couleur de transition */
+.nav-links li a:hover{
+    color:#0088a9
+}
+
+/* style du bouton avec petite animation */
+button{
+    color: rgb(201, 221, 252);
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169,1);
+    border:none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s esase 0s;
+}
+/* couleurs de transition */
+button:hover{
+    background-color: rgba(0, 136, 169,0.8)
+}
+
+.connexion{
+    display: flex;
+    justify-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: #336699;
+    
+}
+
+.body{
+    background-color:rgb(201, 221, 252);
+    padding: 1cm;
+    margin: 1cm;
+}
+
+#pied{
+    background-color: gainsboro;
+    text-decoration: none;
+    text-transform: capitalize;
+    text-align: center;
+
+}
+
+
+h3{
+    text-align: center;
+    font-family: 'century',Verdana, Geneva, Tahoma, sans-serif
+}
+
+
+#contact h3{
+    font-family: Geneva,Verdana, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5cm;
+}
+#contact h5{
+    display: flex;
+    justify-content:space-around;
+}
+#contact p{
+    display: flex;
+    justify-content:space-around;
+}
+
+#connex{
+    text-align: center;
+    text-decoration: none;
+    color: #336699;
+}
+
+#inscrip{
+    text-align: center;
+    text-decoration: none;
+    color: #336699;
+}
+
+#connex{
+    display: flex;
+    justify-content: center;
+}
+
+#inscrip{
+    display: flex;
+    justify-content: center;
+}

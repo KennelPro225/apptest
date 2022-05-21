@@ -1,0 +1,54 @@
+{% extends "layout.html"%}
+{% block content%}
+<title>{{ title}}</title>
+    <!-- Formatage  de la page de connexion -->
+    <div class="content-log">
+        <h3>Connexion</h3>
+        <!-- balise form qui va permettre avec la methode get de récuperer les infos saisies dans les champs -->
+        <form action="" method="get">
+            <!-- premier bloc qui presente le nom des champs: Email et Password -->
+            <div class="form-group1">
+                {{form.email.label(class='label3')}}
+                {{form.password.label(class='label2')}}
+            </div>
+            <div class="form-group2">
+                <!-- condition pour la gestion des erreurs  -->
+                {% if form.email.errors %}
+                    {{ form.email(class='input')}}
+                    <div class="invalid-feedback">
+                        {% for errors in form.email.errors %}
+                        <span>{{error}}</span>
+                        {% endfor %}
+                    </div>
+                {% else%}
+                    {{ form.email(class='input')}}
+                {% endif%}
+                <!-- condition pour la gestion des erreurs  -->
+                {% if form.password.errors %}
+                    {{ form.password(class='input')}}
+                    <div class="invalid-feedback">
+                        {% for errors in form.password.errors %}
+                        <span>{{error}}</span>
+                        {% endfor %}
+                    </div>
+                {% else%}
+                    {{ form.password(class='input')}}
+                {% endif%}
+            </div>
+            <!-- bouton d'envoie des infos -->
+            <div class="form-group3">
+                {{form.submit(class='button')}}
+            </div>
+        <!-- checkBox qui va permetrre de preciser si pon veut rester connecter ou non -->
+            <div class="form-group3">
+                {{form.remember.label(class='label')}}
+                {{form.remember(class='input')}}
+            </div>
+        </form>
+        <!-- text générique pour le rappelle du mote de passe et la création d'un compte si le visiteur n'a pas encore un compte -->
+        <p>Mot de passe <a href="#">oublié?</a> </p>
+        <p>Vous n'avez pas de compte? <a href="{{url_for('sign_up')}}">Inscrivez-vous</a></p> 
+    </div>
+</body>
+</html>
+{% endblock content%}
